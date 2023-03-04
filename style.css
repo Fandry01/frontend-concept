@@ -13,8 +13,26 @@
 ////////////////////////*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
 
+/*Paars #5722CD;
+Blauw #4845E4;
+Roze #ED4385;
+Zwart #0C0C0C (voor standaard tekst);
+Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:
+Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)
+Grijs #7A7A7A (voor de service-tegel tekst);*|
 /* ------------------------------- 2. Typography ----------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+body{font-family:'Merriweather', serif;}
+header{
+    font-family:'Roboto', sans-serif;
+    color: #fff;
+}
+
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
@@ -25,7 +43,45 @@
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
-
+header{
+    background-color: #4845e4;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+nav{
+    background-color: #4845e4;
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+}
+nav ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding-right: 30px;
+}
+.header-text{
+    align-content: center;
+}
+button{
+    background-color:#ED4385 ;
+    border-radius: 30px;
+    font-size: 16px;
+    border: 0px;
+    padding: 15px 30px;
+    color: #fff;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.35);
+    text-transform: uppercase;
+}
+.line-below{
+    bottom: 5px;
+    position: absolute;
+}
 /* --------------- 4.2 Introduction ------------------- */
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
